@@ -1,12 +1,56 @@
-# React + Vite
+🛍️ VestiOn
+VestiOn é uma aplicação completa de e-commerce para venda de roupas.
+Desenvolvida para estudo e prática de React no front-end e Node.js/Express no back-end, com integração a um banco de dados.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologias
 
-Currently, two official plugins are available:
+Front-end
+React – Biblioteca para construção de interfaces.
+Vite – Ferramenta de build e servidor de desenvolvimento rápido.
+React Router DOM – Navegação SPA.
+Font Awesome – Ícones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Back-end
+Node.js – Ambiente de execução JavaScript no servidor.
+Express – Framework para criação de rotas e APIs.
+Banco de Dados – Sqlite.
 
-## Expanding the ESLint configuration
+Outros
+JavaScript (ES6+)
+CSS Modules / variáveis no :root para cores e fontes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📦 Instalação
+Clone o repositório
+git clone https://github.com/EduardoGabrielV/react-vestion
+cd react-vestion
+
+
+Instale as dependências do front-end
+npm install
+
+
+Instale as dependências do back-end (na pasta server ou equivalente)
+cd server
+npm install
+
+
+Configure as variáveis de ambiente (ex.: .env) para conexão com o banco.
+Execute os projetos
+
+Front-end:
+npm run dev
+
+
+Back-end:
+npm start
+
+🎯 Funcionalidades (planejadas)
+Página Home com informações gerais e chamadas para ação.
+Página Produtos com listagem, filtros e detalhes.
+Carrinho de compras com atualização em tempo real.
+Área de perfil e autenticação de usuários.
+Integração com banco de dados para gerenciar produtos e pedidos.
+Layout responsivo e moderno.
+
+🤝 Contribuição
+Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
