@@ -7,7 +7,7 @@ const actualYear = new Date().getFullYear();
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__section}>
+      <div id='contact' className={styles.footer__section}>
         <h3>Contato</h3>
         <p>contato@vestion.com</p>
         <p>(11) 99999-9999</p>
@@ -22,7 +22,7 @@ function Footer() {
         <Link className={styles.footer__links} to="/carrinho">Carrinho</Link>
       </div>
 
-      <div id='about' className={styles.footer__section}>
+      <div className={styles.footer__section}>
         <h3>VestiOn</h3>
         <p>{createdYear === actualYear ? actualYear : `${createdYear} - ${actualYear}`} VestiOn. Todos os direitos reservados.</p>
         <a className={styles.footer__links} href="#top">Voltar ao topo</a>

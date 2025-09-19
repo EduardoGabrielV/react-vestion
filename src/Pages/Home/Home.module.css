@@ -1,0 +1,40 @@
+.homePage{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 24px;
+    height: 100%
+
+}
+
+.homePage__section{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 calc(50% - 24px); /*Aqui to garantindo que vai ter no max 2 section por linha*/
+    gap: 15px;
+}
+
+.homePage__slogan{
+ width: 300px;
+ border: 6px solid var(--color-primary);
+ border-radius: 50%;
+}
+
+.homePage__section ul{
+    list-style: none;
+    color: var(--color-text-light);
+}
+
+.homePage span{
+    color: var(--color-text);
+}
+
+.homePage__slogan{
+    font-style: italic;
+}
