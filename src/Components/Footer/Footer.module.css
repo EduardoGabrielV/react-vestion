@@ -1,0 +1,25 @@
+.footer{
+    background-color: var(--color-footer);
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.footer__links{
+    color: var(--color-white);
+}
+
+.footer__links:hover{
+    color: var(--color-primary-light);
+}
+
+.footer__section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}

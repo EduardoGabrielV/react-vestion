@@ -1,0 +1,27 @@
+.header{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 10vh;
+    min-height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 120px;
+}
+
+nav{
+    display: flex;
+    gap: clamp(8px, 2.8vw, 24px);
+}
+
+.header__links{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.header__links:hover{
+    color: var(--color-primary-light);
+}
