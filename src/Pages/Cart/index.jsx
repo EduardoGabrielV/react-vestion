@@ -1,20 +1,11 @@
 import styles from './Cart.module.css'
-import Header from '../../Components/Header'
-import Footer from '../../Components/Footer'
-import Container from '../../Components/Container'
 
-function Cart (){
+function Cart() {
 
-    return(
-        <>
-            <Header/>
-                <Container>
-                    <div className={styles.cartPage}>
-                        Cart Page
-                    </div>
-                </Container>
-            <Footer/>
-        </>
+    return (
+        <div className={styles.cartPage}>
+            Cart Page
+        </div>
     )
 }
 
