@@ -24,7 +24,7 @@ function Footer() {
 
       <div className={styles.footer__section}>
         <h3>VestiOn</h3>
-        <p>&copy; {createdYear === actualYear ? actualYear : `${createdYear} - ${actualYear}`} VestiOn (empresa fictícia ). Todos os direitos reservados.</p>
+        <p>&copy; {createdYear === actualYear ? actualYear : `${createdYear} - ${actualYear}`} VestiOn (empresa fictícia). Todos os direitos reservados.</p>
         <a className={styles.footer__links} href="#top">Voltar ao topo</a>
       </div>
     </footer>
