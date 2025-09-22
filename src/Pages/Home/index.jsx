@@ -3,8 +3,11 @@ import styles from './Home.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTruckFast, faRotate, faShieldHalved, faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
-function Home() {
+export default function Home() {
+
+  const[email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,7 +17,6 @@ function Home() {
     <div className={styles.homePage}>
 
       <section className={styles.homePage__section}>
-        <img src={slogan} alt="Slogan VestiOn" draggable='false' className={styles.homePage__slogan} />
         <div className={styles.homePage__about}>
           <h3 className={styles.homePage__titles}>Sobre a VestiOn</h3>
           <p>
@@ -22,6 +24,7 @@ function Home() {
             versáteis e com preço justo. Produção consciente e design minimalista.
           </p>
         </div>
+        <img src={slogan} alt="Slogan VestiOn" draggable='false' className={styles.homePage__slogan} />
       </section>
 
       <section className={styles.homePage__section}>
@@ -45,13 +48,18 @@ function Home() {
         <div className={styles.homePage__form}>
           <h3 className={styles.homePage__titles}>Assine e ganhe <span className={styles.homePage__span}>10%</span> off</h3>
           <form onSubmit={handleSubmit}>
-            <input type="email" placeholder='Digite seu email' required maxLength={45} />
-            <button className={styles.homePage__button} type='submit'>Enviar</button>
+            <input 
+            name='email'
+            type="email" 
+            placeholder='Digite seu email' 
+            required maxLength={45} 
+            onChange={(e)=> setEmail(e.target.value)}
+            value={email}
+            />
+            <button className={styles.homePage__button} disabled={!email}>Assinar</button>
           </form>
         </div>
       </section>
     </div>
   )
 }
-
-export default Home

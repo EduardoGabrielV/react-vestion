@@ -1,20 +1,25 @@
 :root {
   /* --- Cores principais --- */
-  --color-primary: #1E3A8A;      /* Azul profundo */
-  --color-primary-light: #3B82F6;/* Azul mais claro para hover */
-  --color-secondary: #E11D48;    /* Rosa/avermelhado para destaques */
-  --color-accent: #F59E0B;       /* Dourado/mostarda (detalhes) */
+  --color-primary: #1E3A8A;
+  --color-primary-light: #3B82F6;
+  --color-secondary: #E11D48; 
+  --color-accent: #F59E0B;       
   --color-white: #FFFFFF;
   --color-black: #333333;
-   --color-dark: #000;
+  --color-dark: #000;
   --color-footer: #333333;
+  --color-form: linear-gradient(to left,#1E3A8A 0%,#2a4fb8 50%,#60A5FA 100%);
+  --color-gradient: linear-gradient(to left,#1E3A8A 0%,#2a4fb8 50%,#60A5FA 100%);
+  --color-foreground: #0f172a;
+
 
   /* --- Neutros --- */
-  --color-bg: #F9FAFB;           /* Fundo geral */
-  --color-surface: #FFFFFF;      /* Cards, modais */
-  --color-text: #1F2937;         /* Texto principal */
-  --color-text-light: #6B7280;   /* Texto secundário */
-  --color-border: #E5E7EB;       /* Bordas sutis */
+  --color-bg: #F9FAFB;           
+  --color-surface: #FFFFFF;      
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+  --color-border: #E5E7EB;
+  
 
   /* --- Estados --- */
   --color-success: #10B981;
@@ -25,7 +30,7 @@
 
 :root {
   /* Fonte */
-  --font: 'Poppins', 'Segoe UI', sans-serif;
+  --font: 'Poppins';
 
 
   /* Tamanhos */

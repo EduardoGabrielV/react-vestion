@@ -1,0 +1,56 @@
+.loginFormPage {
+    background-color: var(--color-white);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+
+.loginFormPage img{
+    width: 200px;
+}
+
+.loginFormPage input,
+button {
+    width: 60%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+}
+
+.loginFormPage__button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.loginFormPage__button:hover {
+    background-color: var(--color-dark);
+}
+
+.loginFormPage__button:active { /*ao clicar o botao se desloca para baixo*/
+  transform: translateY(1px);
+}
+
+.loginFormPage__message{
+    color: var(--color-text);
+}
+
+.loginFormPage__links{
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-white);
+}
+
+.loginFormPage__links:hover {
+    border-bottom: 1px solid var(--color-text);
+}
+
+.loginFormPage__error { color: #ef4444; margin: 8px 0; font-size: .9rem; }
+.loginFormPage__button[disabled] { opacity: .6; cursor: not-allowed; }

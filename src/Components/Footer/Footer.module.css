@@ -22,4 +22,30 @@
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    max-width: 30%;
+}
+
+.footer__linkItems{
+    color: var(--color-white);
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    min-width: 150px;
+    text-align: center;
+}
+
+.footer__linkItems:hover{
+    transform: translateY(1px);
+}
+
+.footer__linkInstagram{
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+}
+
+.footer__linkYoutube{
+    background-color: #FF0000;
+}
+
+.footer__linkWhatsapp{
+    background-color: #25D366;
 }

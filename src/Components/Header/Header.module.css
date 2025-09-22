@@ -13,15 +13,48 @@
 }
 
 nav{
+    width: 60%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: clamp(8px, 2.8vw, 24px);
 }
 
 .header__links{
     text-decoration: none;
     color: var(--color-white);
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__links:hover{
     color: var(--color-primary-light);
+}
+
+.header__links:hover{
+    .userName{
+        color: var(--color-primary-light);
+    }
+}
+
+.header__logout, .header__login {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 90px;
+  padding: none;
+}
+
+.header__logout:hover, .header__login:hover { 
+    opacity: .85; 
+}
+
+.userName{
+    color: var(--color-warning);
 }

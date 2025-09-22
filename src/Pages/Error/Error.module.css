@@ -1,0 +1,79 @@
+.errorPage {
+  min-height: clamp(60vh, 70vh, 90vh); /*Min, ideal, Max*/
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  width: 50%;
+}
+
+.errorPage__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  min-width: 64px;
+  padding: 0 18px;
+  border-radius: 9999px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color:  var(--color-primary);
+  color: var(--color-white);
+}
+
+.errorPage__title {
+  font-size: var(--fs-3xl);
+  color: var(--color-foreground);
+  margin-top: 6px;
+}
+
+.errorPage__subtitle {
+  color: var(--color-foreground);
+  
+}
+
+.errorPage__buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.errorPage__button {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  will-change: transform;
+  cursor: pointer;
+  width: 400px;
+}
+
+.errorPage__button:active { /*ao clicar o botao se desloca para baixo*/
+  transform: translateY(1px);
+}
+
+.errorPage__buttonHome {
+  background: var(--color-gradient);
+  color: #fff;
+}
+
+.errorPage__buttonHome:hover {
+  opacity: 0.92;
+}
+
+.errorPage__buttonReload {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: color-mix(in oklab, var(--color-primary) 80%, var(--color-white));
+}
+
+.errorPage__buttonReload:hover {
+  border-color: color-mix(in oklab, var(--color-primary) 25%, var(--color-white));
+}

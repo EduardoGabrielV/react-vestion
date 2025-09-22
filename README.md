@@ -16,7 +16,7 @@ Express – Framework para criação de rotas e APIs.
 Banco de Dados – Sqlite.
 
 Outros
-JavaScript (ES6+)
+JavaScript
 CSS Modules / variáveis no :root para cores e fontes
 
 📦 Instalação

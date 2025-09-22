@@ -3,7 +3,7 @@ import Footer from '../../Components/Footer'
 import Container from '../../Components/Container'
 import { Outlet } from 'react-router-dom'
 
-function PageBase (){
+export default function MainLayout (){
     return(
         <main>
            <Header/>
@@ -14,5 +14,3 @@ function PageBase (){
         </main>
     )
 }
-
-export default PageBase

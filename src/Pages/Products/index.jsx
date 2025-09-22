@@ -1,7 +1,7 @@
 import styles from '../Products/Products.module.css'
 
 
-function Products() {
+export default function Products() {
     return (
 
         <div className={styles.productsPage}>
@@ -10,5 +10,3 @@ function Products() {
 
     )
 }
-
-export default Products

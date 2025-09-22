@@ -1,6 +1,6 @@
 import styles from './Cart.module.css'
 
-function Cart() {
+export default function Cart() {
 
     return (
         <div className={styles.cartPage}>
@@ -8,5 +8,3 @@ function Cart() {
         </div>
     )
 }
-
-export default Cart

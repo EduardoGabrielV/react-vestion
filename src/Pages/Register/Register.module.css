@@ -1,0 +1,64 @@
+.registerFormPage {
+    background-color: var(--color-white);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+
+.registerFormPage img {
+    width: 200px;
+}
+
+.registerFormPage input,
+button {
+    width: 60%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+}
+
+.registerFormPage__button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.registerFormPage__button:hover {
+    background-color: var(--color-dark);
+}
+
+.registerFormPage__button:active {
+    transform: translateY(1px);
+}
+
+.registerFormPage__message {
+    color: var(--color-text);
+}
+
+.registerFormPage__links {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-white);
+}
+
+.registerFormPage__links:hover {
+    border-bottom: 1px solid var(--color-text);
+}
+
+.registerFormPage__error {
+    color: #ef4444;
+    margin: 8px 0;
+    font-size: .9rem;
+}
+
+.registerFormPage__button[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}
