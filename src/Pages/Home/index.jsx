@@ -1,4 +1,4 @@
-import slogan from '../../assets/slogan-vestion.png'
+import slogan from '../../assets/ui/slogan-vestion.png'
 import styles from './Home.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

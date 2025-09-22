@@ -1,8 +1,8 @@
-import logo from '../../assets/logo-vestion.png'
+import logo from '../../assets/ui/logo-vestion.png'
 import styles from './Header.module.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faShirt, faCartShopping, faContactCard, faUser, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faShirt, faCartShopping, faContactCard, faUser, faRightFromBracket, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../../auth/AuthContext';
 
 export default function Header() {
@@ -41,7 +41,7 @@ export default function Header() {
           </>
         ) : (
             <button type="button" className={styles.header__login} onClick={goToLogin}>
-              <FontAwesomeIcon icon={faRightFromBracket} /> Entrar
+              <FontAwesomeIcon icon={faRightToBracket} /> Entrar
             </button>
         )}
       </nav>

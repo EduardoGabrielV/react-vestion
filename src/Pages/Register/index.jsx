@@ -1,5 +1,5 @@
 import styles from './Register.module.css'
-import logo from '../../assets/logo-vestion.png'
+import logo from '../../assets/ui/logo-vestion.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
