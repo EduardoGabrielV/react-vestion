@@ -1,0 +1,96 @@
+.productsPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsPage__productCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    padding: 15px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productPage__name {
+    color: (--color-foreground);
+    margin-bottom: 100px solid var(--color-gradient);
+}
+
+.productsPage__productCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.productPage__image {
+    width: 250px;
+    height: 250px;
+}
+
+.productPage__prices {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.productPage__priceOld {
+  color: var(--color-text-muted, #64748b);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.productPage__priceNew {
+  color: var(--color-success, #16a34a);
+  font-weight: 800;
+}
+
+.productPage__buttonAddCart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color .2s ease,
+    box-shadow .2s ease,
+    transform .06s ease;
+}
+
+.productPage__buttonAddCart:hover {
+  background-color: var(--color-dark);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.productPage__buttonAddCart:active {
+  transform: translateY(1px);
+}
+
+.productPage__buttonAddCart:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.productPage__buttonAddCart:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary) 35%, white);
+}
+
+

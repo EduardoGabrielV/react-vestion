@@ -1,15 +1,17 @@
+// auth/AuthContext.jsx
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
-
-  // Recarrega sessão do localStorage ao abrir o app
-  useEffect(() => {
-    const saved = localStorage.getItem('session_user');
-    if (saved) setUser(JSON.parse(saved));
-  }, []);
+  const [user, setUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('session_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
 
   function login(u) {
     setUser(u);
@@ -21,8 +23,19 @@ export function AuthProvider({ children }) {
     localStorage.removeItem('session_user');
   }
 
+ 
+  useEffect(() => {
+    const onStorage = (e) => {
+      if (e.key === 'session_user') {
+        setUser(e.newValue ? JSON.parse(e.newValue) : null);
+      }
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
+
   return (
-    <AuthContext.Provider value={{ user, login, logout, setUser }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

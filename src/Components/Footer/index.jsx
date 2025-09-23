@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className={styles.footer}>
 
       <div className={styles.footer__section}>
-        <h3>Desenvolvido por:</h3>
+        <h3>Desenvolvedor</h3>
         <a className={styles.footer__linkGithub} href="https://www.linkedin.com/in/eduardo-gabriel-vicente-8687b7327/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} /> Eduardo Gabriel Vicente
         </a>
